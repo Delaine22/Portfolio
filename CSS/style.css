@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+}
+
+/* Header layout */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #344c36;
+  color: #fafafa;
+  padding: 20px;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f4b400;
+  line-height: 1.2;
+}
+
+/* Links (desktop) */
+.nav_links {
+  display: flex;
+  gap: 20px;
+}
+.nav_links a {
+  color: #fafafa;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav_links a:hover {
+  color: #f4b400;
+}
+
+/* Botão contacto (desktop) */
+.nav_btn button {
+  background: #f4b400;
+  color: #344c36;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.nav_btn button:hover {
+  opacity: 0.8;
+}
+
+/* Ícone do hambúrguer */
+.hamburger {
+  font-size: 28px;
+  color: #f4b400;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu lateral (mobile) */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #344c36;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px 0;
+}
+.side-menu a:hover {
+  color: #f4b400;
+}
+.close-btn {
+  align-self: flex-end;
+  font-size: 30px;
+  color: #f4b400;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav_links,
+  .nav_btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .side-menu.active {
+    right: 0;
+  }
+}
+
+  
