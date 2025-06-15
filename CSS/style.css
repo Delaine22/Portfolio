@@ -6,8 +6,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fafafa;
+  font-family: 'Times New Roman', Times, serif;
+  background: #fefafa;
 }
 
 /* Header layout */
@@ -15,18 +15,17 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #344c36;
+  background: #fefafa;
   color: #fafafa;
   padding: 20px;
   position: relative;
 }
 
 /* Logo */
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-  color: #f4b400;
-  line-height: 1.2;
+.logo img{
+ width: 100px;
+ height: 90px;
+
 }
 
 /* Links (desktop) */
@@ -35,21 +34,22 @@ body {
   gap: 20px;
 }
 .nav_links a {
-  color: #fafafa;
+  color: #333;
   text-decoration: none;
   font-weight: 500;
+  font-size: 18px;
 }
 .nav_links a:hover {
-  color: #f4b400;
+  color: #cf332b;
 }
 
 /* Botão contacto (desktop) */
 .nav_btn button {
-  background: #f4b400;
-  color: #344c36;
-  width: 200px;
-  height: 40px;
-  border-radius: 20px;
+  background: #cf332b;
+  color: #f0f0f0;
+  width: 140px;
+  height: 50px;
+  border-radius: 5px;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -61,7 +61,7 @@ body {
 /* Ícone do hambúrguer */
 .hamburger {
   font-size: 28px;
-  color: #f4b400;
+  color: #cf332b;
   cursor: pointer;
   display: none;
 }
@@ -73,7 +73,7 @@ body {
   right: -250px;
   width: 250px;
   height: 100%;
-  background: #344c36;
+  background: #cf332b;
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
@@ -115,23 +115,60 @@ body {
     right: 0;
   }
 }
+
+/* styling section home*/
 #home{
-  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.social_media{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-top: 100px;
 }
-.mytitle h1{
-  text-align: center;
-  font-size: 50px;
-  color: #333;
+.social_media i{
+  font-size: 23px;
+  margin-top: 20px;
 }
-.mytitle p{
-  text-align: center;
+.social_media i:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.titulo h1{
+  color: #002d5b;
+  font-size: 60px;
+  margin-top: 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.introduction p{
+  font-size: 17px;
+ line-height: 25px;
+ margin-top: 15px;
+}
+.introduction button{
+  margin-top: 25px;
+  width: 135px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background: #cf332b;
+  color:#f0f0f0;
   font-weight: bold;
-  font-size: 25px;
-  margin-top: 30px;
-  color: #333;
+  opacity: 0.8;
 }
-  
+.my_photo img{
+  width: 500px;
+}
+#about{
+  margin-top: 80px;
+  background: #f0f0f0;
+  height: 100vh;
+}
+#about h1{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #002d5b;
+}
