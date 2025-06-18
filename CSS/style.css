@@ -121,6 +121,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 80vh;
 }
 .social_media{
   display: flex;
@@ -157,18 +158,194 @@ body {
   font-weight: bold;
   opacity: 0.8;
 }
+.introduction button:hover{
+  opacity: unset;
+  transition: 0.5s;
+}
 .my_photo img{
   width: 500px;
 }
-#about{
-  margin-top: 80px;
-  background: #f0f0f0;
-  height: 100vh;
+#sobre{
+margin-top: 20px;
+background: #ffffff;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
-#about h1{
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+.sobre_titulo{
   text-align: center;
   color: #002d5b;
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.sobre_maincontainer{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  width: 85%;
+  
+}
+.sobre_container1 h3{
+  font-size: 30px;
+  color: #002d5b;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+.sobre_container1 p, 
+.sobre_container2 p,
+.sobre_container3 p{
+  margin-top: 30px;
+  color: #333;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.sobre_container1 button{
+  width: 150px;
+  min-height: 45px;
+  margin-top: 30px;
+  border: none;
+  background: #cf332b;
+  color: #f0f0f0;
+  border-radius: 8px;
+}
+.sobre_container1 button:hover{
+  opacity: 0.9;
+  transition: 0.5s;
+
+}
+.sobre_container2{
+  margin-top: 100px;
+}
+.sobre_container3 {
+  background-color: #f25454; /* cor laranja */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 350px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+.sobre_container3 img{
+  width: 350px;
+  height: 500px;
+  display: block;
+  border-radius: 8px;
+  margin-left: 90px;
+  
+}
+
+.section_services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background: #fdf5f5;
+  height: 95vh;
+  width: 100%;
+}
+.service_title{
+  margin-top: 40px;
+  text-align: center;
+}
+.service_title h2{
+  color: #002d5b;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif ;
+  }
+.service_title p{
+  margin-top: 10px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.linha_horizontal{
+  width: 150px;
+  height: 2px;
+  margin-top: 30px;
+  background: #cf332b;
+}
+/*Estilizando class services_container*/
+.services_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 40px;
+}
+.services_container1{
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+.icon{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center ;
+  border-radius: 50%;
+  background: #f9dcdc;
+}
+.icon i{
+  font-size: 20px;
+}
+.service_content{
+  display: flex;
+  flex-direction: column;
+}
+.service_content h3{
+  text-align: center;
+  
+  font-size: 25px;
+  color: #002d5b;
+  font-family: 'Times New Roman', Times, serif;
+}
+.service_content p{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  margin-top: 20px;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+.icon2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.icon2 i{
+  font-size: 35px;
+  color: #474747;
+}
+.icon2 i:hover{
+  color:#002d5b;
+  transition: 0.5s;
+}/*Fim da estilizacao da class services container*/
+
+/*ESTILIZACAO DA SECTION ILLUSTRATION*/
+#illustration{
+  height: 500px;
+  background-image: url(https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover; /* exibe a imagem inteira */
+  background-attachment: fixed;
 }
