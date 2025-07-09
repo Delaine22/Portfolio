@@ -462,7 +462,9 @@ font-family: 'Times New Roman', Times, serif;
 }
 .size_html, .size_css, .size_js,.size_wp, .size_figma, .size_canva,
 .size_git, .size_bootstrap, .size_microsoft{
-  width: 550px;
+  /*width: 550px;*/
+  max-width: 100%;
+  overflow: hidden;
   height: 15px;
   margin-top: 5px;
   border-radius: 5px;
@@ -534,7 +536,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 .projeto1_foto{
   margin-top: 20px;
-  width: 600px;
+  max-width: 100%;
   height: 290px;
   position: relative;
   overflow: hidden;
