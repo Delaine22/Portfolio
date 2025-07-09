@@ -560,6 +560,9 @@ font-family: 'Times New Roman', Times, serif;
 }*/
 /*FIM DA ESTILIZACAO DA SECTION PROJETOS*/
 @media (max-width: 768px){
+  #home{
+    width: 100%;
+  }
   .social_media{
   display: flex;
   flex-direction: row;
