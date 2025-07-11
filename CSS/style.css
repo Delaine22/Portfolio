@@ -550,6 +550,54 @@ font-family: 'Times New Roman', Times, serif;
   opacity: 0.7;
   transition: 0.5s;
 }
+#contacto p{
+text-align: center;
+margin-top: 10px;
+font-size: larger;
+color: #474747;
+font-family: 'Times New Roman', Times, serif;
+}
+.contact_container{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+}
+.formulario{
+  width: 400px;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  border-radius: 10px;
+  background-color:#f9dcdc;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+.formulario input{
+  width: 260px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid #d3d0d0;
+}
+
+.formulario textarea{
+  width: 260px;
+  border-radius: 5px;
+   margin-top: 5px;
+  border: 1px solid #d3d0d0;
+}
+.formulario button{
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  background: #002d5b;
+}
 /* Conteúdo dentro do card (ex: textos) */
 /*.projeto1 > * {
   position: relative;
