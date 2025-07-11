@@ -656,6 +656,7 @@ font-family: 'Times New Roman', Times, serif;
   .experience_img img {
     width: 90%;
     margin-top: 20px;
+    margin-left: 0px;
   }
 
   .skill_container {
